@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 150">
+  <defs><linearGradient id="jacket" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3d6d9d"/><stop offset="1" stop-color="#183451"/></linearGradient></defs>
+  <g stroke="#0b1220" stroke-width="2" stroke-linejoin="round">
+    <path fill="#1d2a3e" d="M24 127h19l-2 15H18zM57 127h18l8 15H58z"/>
+    <path fill="#e7edf3" d="M14 140h31v6H10zM57 140h31v6H56z"/>
+    <path fill="#253f5e" d="M29 71h38l7 57H22z"/><path fill="url(#jacket)" d="M23 59l18-9h15l18 10-7 43H30z"/>
+    <path fill="#e5d0ae" d="M35 53l13 11 13-11-5-7H40z"/><path fill="#101723" d="M39 68h18v23H39z"/>
+    <circle fill="none" stroke="#d9b477" cx="48" cy="78" r="8"/><path stroke="#d9b477" d="M44 78h8M48 74v8"/>
+    <path fill="#c98d6e" d="M31 64l-9 25 7 3 12-20zM65 65l10 25-7 3-12-20z"/>
+    <circle fill="#c98d6e" cx="48" cy="32" r="19"/><path fill="#1a1a24" d="M29 31Q32 7 49 11q17-4 19 20-9-7-19-6-11-1-20 6z"/>
+    <path fill="#f7e4d5" stroke="none" d="M38 32h5v3h-5zM53 32h5v3h-5z"/><path fill="none" stroke="#713b45" d="M43 43q5 5 10 0"/>
+    <path fill="#111722" d="M72 65h5v31h-5z"/><circle fill="#d9b477" cx="74" cy="62" r="7"/>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#11131c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Medina Music — Catálogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Josué Medina"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" role="img"><path d="M17 7v18c0 6-3 10-9 10-5 0-8-3-8-7M21 35V7l6 10 6-10v28"/></svg></span><span>JOSUÉ<br><small>MEDINA</small></span></a>
+        <nav><a class="active" href="#library">Catálogo</a><a href="#bio">Sobre mí</a></nav>
+        <div class="top-actions"><button id="installBtn" class="button button-ghost install-btn" hidden>Instalar app</button><button id="shareBtn" class="button button-ghost">Compartir <span>↗</span></button></div>
+      </header>
+      <aside class="support-banner"><div class="support-spark">✦</div><div><strong>Con tu apoyo, hacemos mejor música.</strong><span>Tu colaboración ayuda a mejorar cada producción.</span></div><a href="https://link.mercadopago.com.ar/josuemusic" target="_blank" rel="noopener">Apoyar el proyecto <span>↗</span></a></aside>
+
+      <section class="hero" id="library">
+        <div class="hero-copy"><p class="eyebrow">CATÁLOGO MUSICAL · 2026</p><h1>Un catálogo sonoro,<br><em>hecho para descubrir.</em></h1><p class="lede">Una selección de álbumes y sencillos para escuchar, guardar y compartir.</p><div class="hero-actions"><a class="button button-primary" href="#library">Explorar catálogo <span>↓</span></a><button id="shareHeroBtn" class="button button-text">Compartir catálogo <span>↗</span></button></div></div>
+        <div class="hero-art"><div class="vinyl"><div class="label">JM</div></div><div class="art-card"><span>CATÁLOGO</span><strong>Sonido<br>con propósito</strong><small>JOSUÉ MEDINA</small></div></div>
+      </section>
+
+      <section class="bio-section" id="bio"><div class="bio-images"><div class="photo-glow"></div><img loading="lazy" src="bio-premio-2.jpeg" alt="Josué Medina en los Premios The Grace"><img loading="lazy" class="bio-secondary" src="bio-premio-1.jpeg" alt="Josué Medina recibiendo un reconocimiento"><div class="photo-caption"><span>THE GRACE</span><strong>Premios · 2023 / 2025</strong></div></div><div class="bio-copy"><p class="eyebrow">SOBRE JOSUÉ</p><h2>Fe, música<br>y propósito.</h2><p>Josué Medina es un artista argentino de género urbano cristiano. Nació en Sáenz Peña, Chaco, y actualmente vive en Buenos Aires.</p><p>Comenzó a hacer música a los 15 años y, desde hace cuatro años, desarrolla su carrera profesional con una misión clara: alcanzar a jóvenes que están alejados y a personas que todavía no conocen a Dios.</p><p>Cada canción también es un recordatorio personal de lo que Dios puede hacer y de todo lo que ya hizo en su vida.</p><div class="bio-stats"><span><strong>10+</strong> sencillos</span><span><strong>5</strong> tracks en <em>Trendy</em></span><span><strong>2×</strong> ganador The Grace</span></div><div class="social-links" aria-label="Redes sociales"><a href="https://www.instagram.com/josue_mediinaa?stkn=ZmtqZ3pzNzg5ZG9t" target="_blank" rel="noopener"><span>◎</span> Instagram</a><a href="https://www.facebook.com/share/1EmB1XqpJW/" target="_blank" rel="noopener"><span>f</span> Facebook</a><a href="https://www.tiktok.com/@josuemediinaa?_r=1&_t=ZS-99s7cpWRN3s" target="_blank" rel="noopener"><span>♪</span> TikTok</a></div></div></section>
+      <section class="release-card"><div class="release-art" aria-label="Monograma JM"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M17 7v18c0 6-3 10-9 10-5 0-8-3-8-7M21 35V7l6 10 6-10v28"/></svg></div><div class="release-copy"><p class="eyebrow">ÚLTIMO LANZAMIENTO</p><h2>Trendy</h2><p>Un álbum urbano cristiano sobre identidad, fe y propósito.</p><div class="release-meta"><span>5 canciones</span><i>•</i><span>Josué Medina</span></div></div><a href="#library" class="release-link">Escuchar álbum <span>→</span></a><a href="juego.html" class="release-link game-link">Jugar nivel 1 <span>✦</span></a></section>
+      <section class="toolbar"><div><p class="eyebrow">CATÁLOGO</p><h2>Canciones <span id="songCount">0</span></h2></div><label class="search"><span>⌕</span><input id="searchInput" placeholder="Buscar canción..." aria-label="Buscar canción" /></label></section>
+      <div class="filter-bar" id="filterBar"><button class="filter active" data-filter="all">Todo</button><button class="filter" data-filter="Trendy">Trendy</button><button class="filter" data-filter="Sencillos">Sencillos</button><button class="filter" data-filter="favorites">♡ Favoritos</button></div>
+      <section id="trackList" class="track-list" aria-live="polite"></section>
+      <section id="emptyState" class="empty-state"><div class="empty-icon">♫</div><h3>Tu catálogo está esperando</h3><p>Agregá tus archivos de audio para empezar a crear tu biblioteca.</p><label class="button button-primary" for="fileInput">Cargar música</label></section>
+
+      <section class="share-panel" id="about"><div><p class="eyebrow">LISTO PARA COMPARTIR</p><h2>Tu música merece<br>ser escuchada.</h2><p>Copiá el enlace de este catálogo y compartilo con quien quieras.</p></div><button id="sharePanelBtn" class="button button-light">Copiar enlace <span>↗</span></button></section>
+      <footer><span class="footer-brand"><span class="footer-mark">JM</span> © 2026 Josué Medina</span><span>Hecho para compartir canciones</span></footer>
+    </main>
+    <div class="player" id="player"><div class="now"><div class="mini-cover">♫</div><div><strong id="nowTitle">Nada reproduciéndose</strong><span id="nowArtist">Elegí una canción</span></div></div><div class="controls"><button id="prevBtn">⏮</button><button id="playBtn" class="play">▶</button><button id="nextBtn">⏭</button></div><div class="progress"><span id="currentTime">0:00</span><input id="progressBar" type="range" min="0" max="100" value="0" /><span id="duration">0:00</span></div><audio id="audio"></audio></div>
+    <div id="toast" class="toast" role="status"></div>
+    <div id="ytModal" class="yt-modal" hidden><div class="yt-backdrop" data-close></div><div class="yt-dialog"><button class="yt-close" data-close aria-label="Cerrar">×</button><iframe id="ytFrame" title="Reproductor de YouTube" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>

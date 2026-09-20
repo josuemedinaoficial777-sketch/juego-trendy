@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Logo JM — Josué Medina</title>
+  <desc id="desc">Monograma elegante JM en dorado sobre un círculo oscuro.</desc>
+  <circle cx="256" cy="256" r="242" fill="#1c1d24"/>
+  <circle cx="256" cy="256" r="241" fill="none" stroke="#a77d4d" stroke-width="4"/>
+  <path d="M174 132v142c0 50-25 78-70 78-40 0-64-22-64-58M206 350V132l50 76 50-76v218" fill="none" stroke="#d9b88c" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
